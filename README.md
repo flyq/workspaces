@@ -1,2 +1,2 @@
 # workspaces
-Learn to program by myself.
+Learn to program
