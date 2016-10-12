@@ -5,11 +5,11 @@
  */
 public class ex1
 {
+    static int i;
+    static char c;
     public static void main(String[] args)
     {
-	int x;
-	char y;
-	System.out.println(x);
-	System.out.println(y);
+	System.out.println("int = " + i);
+	System.out.print("char = " + c);
     }
 }
