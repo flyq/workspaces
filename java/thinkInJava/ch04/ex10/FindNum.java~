@@ -1,0 +1,14 @@
+public class FindNum
+{
+    public static void main(String[] args)
+    {
+	int a,b,c,d;
+	
+	for (int i = 1000; i < 10000; i++)
+	    {
+		a = i % 1000;
+		b = i % 100 - a * 1000;
+		c = i % 10 - a * 1000 - b * 100;
+		d = i - a * 1000 - b * 100 - c * 10;
+		if(a*10+b
+ 		
