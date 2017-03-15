@@ -1,0 +1,17 @@
+public class No10 {
+    public static void main(String[] args) {
+	System.out.println(getNum(9));
+    }
+
+    public static int getNumber(int n) {
+	int num = 0;
+	while (n != 0){
+	    num++;
+	    n = (n -1)&n;
+	}
+	return num;
+
+    }
+}
+	
+	    
