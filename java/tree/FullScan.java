@@ -1,17 +1,4 @@
-/**
- * @Date 2016年9月12日
- *
- * @author 郭  璞
- *
- */
-package tree;
 
-import java.util.Stack;
-
-/**
- * @author 郭 璞 <br>
- *         二叉树的先序，中序，以及后序，递归以及非递归的实现
- *
  */
 public class FullScan {
 
@@ -253,7 +240,7 @@ class Node {
 
     public Node() {
     }
-
+ 
     public Node(int value) {
         this.value = value;
     }
