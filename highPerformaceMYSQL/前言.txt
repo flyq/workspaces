@@ -1,0 +1,10 @@
+在线官方文档
+http://dev.mysql.com/doc/
+
+Windows获取Unix工具的Windows兼容版本
+
+实例代码
+http://www.highperfmysql.com
+
+配套网页
+http://shop.oreilly.com/product/0636920022343.do
