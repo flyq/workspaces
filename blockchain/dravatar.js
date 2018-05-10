@@ -79,5 +79,6 @@ SuperDictionary.prototype = {
         if (dictItem){
             this.repo.del(key);
         } 
+    }
 };
 module.exports = SuperDictionary;
