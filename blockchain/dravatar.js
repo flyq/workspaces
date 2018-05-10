@@ -38,14 +38,15 @@ SuperDictionary.prototype = {
 
         var key = Blockchain.transaction.from;
         var dictItem = this.repo.get(key);
+        
         if (dictItem){
-            dictItem.value = value;
-        } else {
-            dictItem = new DictItem();
-            dictItem.key = key;
-            dictItem.value = value;
-            this.repo.put(key, dictItem);
-        }
+            this.repo.del(key);
+        } 
+        
+        dictItem = new DictItem();
+        dictItem.key = key;
+        dictItem.value = value;
+        this.repo.put(key, dictItem);
     },
 
     get: function () {
