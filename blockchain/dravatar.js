@@ -60,10 +60,11 @@ SuperDictionary.prototype = {
     getFromAddress: function(key) {
         key = key.trim();
         
-        var dictItem = this.repo.get(key);
         if ( key === "" ) {
             throw new Error("empty key")
         }
+        
+        var dictItem = this.repo.get(key);        
         if ( !dictItem ) {
             throw new Error("valid address or this address don't upload")
         }
@@ -71,7 +72,7 @@ SuperDictionary.prototype = {
         return this.repo.get(key);
     },
     
-    del: function() {
+    delItem: function() {
         var key = Blockchain.transaction.from;
         var dictItem = this.repo.get(key);
         
