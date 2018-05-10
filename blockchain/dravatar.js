@@ -55,6 +55,28 @@ SuperDictionary.prototype = {
             throw new Error("empty key")
         }
         return this.repo.get(key);
-    }
+    },
+    
+    getFromAddress: function(key) {
+        key = key.trim();
+        
+        var dictItem = this.repo.get(key);
+        if ( key === "" ) {
+            throw new Error("empty key")
+        }
+        if ( !dictItem ) {
+            throw new Error("valid address or this address don't upload")
+        }
+        
+        return this.repo.get(key);
+    },
+    
+    del: function() {
+        var key = Blockchain.transaction.from;
+        var dictItem = this.repo.get(key);
+        
+        if (dictItem){
+            this.repo.del(key);
+        } 
 };
 module.exports = SuperDictionary;
